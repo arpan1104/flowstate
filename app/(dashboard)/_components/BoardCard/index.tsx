@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Overlay } from "./Overlay";
 
@@ -29,7 +28,6 @@ interface BoardCardProps {
 const BoardCard = ({
   id,
   title,
-  imageUrl,
   authorId,
   authorName,
   createdAt,

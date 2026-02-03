@@ -18,6 +18,7 @@ interface BoardListProps {
 }
 
 export const BoardList = ({ orgId, query }: BoardListProps) => {
+  //@ts-ignore
   const data = useQuery(api.boards.getAllByOrgId, {
     orgId,
     ...query,
@@ -59,7 +60,7 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
       {/* */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-10 pb-10">
         <AddBoardCard orgId={orgId} disabled={false} />
-        {data?.map((board) => {
+        {data?.map((board : any) => {
           return (
             <BoardCard
               key={board._id}

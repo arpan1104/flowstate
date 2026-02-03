@@ -4,11 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import BoardCard from "./BoardCard";
-import EmptySearch from "./EmptySearch";
-import { EmptyFavorites } from "./EmptyFavorites";
-import EmptyBoard from "./EmptyBoard";
 import { NewFileButton } from "./new-file-button";
-import { FolderOpen, LayoutTemplate, FileText, X } from "lucide-react";
+import { LayoutTemplate, FileText, X } from "lucide-react";
 
 interface BoardListProps {
   orgId: string;
